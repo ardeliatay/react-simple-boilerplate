@@ -7,6 +7,7 @@ class Chatbar extends Component {
         this.props.onNewMessage(event.target.value);
         // console.log(event.target.value)
       }
+      event.target.value ='';
     }
     return (
       <footer className="chatbar">
