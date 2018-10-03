@@ -19,6 +19,7 @@ const generateRandomId = (alphabet => {
 class App extends Component {
   constructor(props) {
     super(props);
+    this.socket = new WebSocket ("ws://localhost:3001");
     this.state = { 
       data:
       {
@@ -48,6 +49,7 @@ class App extends Component {
   }
   componentDidMount() {
     console.log("componentDidMount <App />");
+    
     setTimeout(() => {
       console.log("Simulating incoming message");
       // Add a new message to the list of messages in the data store
@@ -59,6 +61,13 @@ class App extends Component {
       //   messages: messages}})
       this.addMessage('Hello there!')
     }, 3000);
+
+
+    this.socket.onopen = function () {
+      console.log("Connected to server")
+    };
+
+
   }
 
 
