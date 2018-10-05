@@ -16,7 +16,7 @@ const server = express()
 const wss = new SocketServer({ server });
 
 wss.broadcast = function broadcast(data) {
-  console.log(data, "hi");
+  console.log(data);
   wss.clients.forEach(function each(client) {
       client.send(JSON.stringify(data));
       console.log('Data sent to client');
