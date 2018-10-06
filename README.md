@@ -4,7 +4,7 @@ React Boilerplate
 A minimal and light dev environment for ReactJS.
 
 ## Screenshots
-!["Screenshot of chatty messages"]()
+!["Screenshot of chatty messages"](https://github.com/ardeliatay/react-simple-boilerplate/blob/master/docs/chatty-app-main.png)
 
 ### Set Up
 
