@@ -7,6 +7,7 @@ class Notifications extends Component {
         <span className="notification-content">{this.props.singleNotification.content}</span>
       </div>
     );
-  }
-}
+  };
+};
+
 export default Notifications;

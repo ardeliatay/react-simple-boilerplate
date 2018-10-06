@@ -1,17 +1,17 @@
 
-    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700");
+    @import url("https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,400i");
     @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css");
 
     body {
       background: white;
       color: black;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Bai JamJuree', sans-serif;
       font-size: 14px;
       margin: 70px 0;
     }
 
     .chatbar {
-      background: tomato;
+      background: rgb(238, 194, 72);
       border-top: 1px solid black;
       bottom: 0;
       display: flex;
@@ -66,7 +66,7 @@
     }
 
     .navbar {
-      background: tomato;
+      background: rgb(238, 194, 72);
       border-bottom: 1px solid black;
       height: 60px;
       left: 0;
@@ -84,6 +84,18 @@
       font-size: 28px;
       height: 60px;
       line-height: 60px;
+      padding: 0 10px;
+      text-decoration: none;
+    }
+
+    .navbar-counter {
+      color: inherit;
+      display: block;
+      float: right;
+      font-weight: 200;
+      font-size: 14px;
+      height: 20px;
+      line-height: 20px;
       padding: 0 10px;
       text-decoration: none;
     }

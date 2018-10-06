@@ -9,13 +9,14 @@ class MessageList extends Component {
         return <Notifications key={message.id} singleNotification={message}/>;
       } else {
         return <Message key={message.id} msg={message}/>;
-      }
+      };
     });
     return (
       <main className="messages">
         {messageList}
       </main>
     );
-  }
-}
+  };
+};
+
 export default MessageList;
